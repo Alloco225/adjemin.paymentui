@@ -98,10 +98,10 @@ body {
     align-items: center;
     max-width: 1000px;
     margin: auto;
-    /* margin-top: 50px; */
+    /* margin-top: 100px; */
     /* margin-top: 50px; */
     /*  */
-    max-height: 100vh;
+    /* max-height: 100vh; */
 }
 
 /* @media only screen and (max-height: 700px){
@@ -187,7 +187,7 @@ body {
 
 .adjemin-paymethod {
     padding: 5px;
-    flex-basis: 40%;
+    flex-basis: 44%;
     border: var(--border);
     border-radius: var(--border-radius);
     display: flex;
@@ -343,6 +343,9 @@ body {
 
 /* Telephones and tablets */
 @media only screen and (max-width: 768px) {
+    #adjeminpay-container{
+        margin-top: 60px !important;
+    }
     #adjeminpay {
         max-width: 450px;
         margin: auto;
@@ -408,21 +411,16 @@ body {
 @media only screen and (min-width: 769px) {
     #adjeminpay-container {
         min-width: 700px;
-        max-width: 1000px;
+        max-width: 900px;
         /* margin-top: 100px; */
         padding: 20px;
-        padding-top: 50px;
+        /* padding-top: 50px; */
         border: var(--border);
         border-radius: var(--border-radius-md);
-        /* margin: auto; */
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
         position: absolute;
         top: 40%;
         left: 50%;
-        transform: translate(-50%, -40%);
-        /* max-height: 70vh; */
+        transform: translate(-50%, -40%) !important;
 
     }
 
@@ -446,4 +444,14 @@ body {
         margin: auto;
     }
 
+}
+
+@media only screen and (min-width: 1500px){
+    #adjeminpay-sideblock {
+        /* min-width: 500px; */
+        width: 100% !important;
+        margin: 0 20px;
+        /* max-width: 500px; */
+        /* margin: auto; */
+    }
 }
