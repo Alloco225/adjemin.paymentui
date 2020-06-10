@@ -1,0 +1,434 @@
+:root {
+    --adjemin-primary: #2dc068;
+    --adjemin-secondary: #16518D;
+    --adjemin-grey: #eee;
+    --adjemin-secondary-light: rgba(22, 82, 141, 0.1);
+    --adjemin-secondary-lighter: #115093;
+    --border-color: #b4c3d9;
+    --border-radius: 3px;
+    --border-radius-md: 5px;
+    --border: 1.5px solid var(--border-color);
+    --border-active: 2px solid var(--adjemin-secondary);
+    --opacity-text: .8;
+}
+
+body {
+    /* background-color: white; */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.adjemin-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.row {
+    min-width: 100%;
+}
+
+/* Utilities */
+/** // TODO :To Use */
+.adjemin-border {
+    border: var(--border);
+    border-color: var(--border-color);
+    border-radius: var(--border-radius);
+}
+
+.mt-10 {
+    margin-top: 20px !important;
+}
+
+/* Buttons */
+.adjemin-btn {
+    width: 100%;
+    display: block;
+    margin: auto;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: large;
+    color: #fff;
+    opacity: var(--opacity-text);
+    font-weight: medium;
+    padding: 10px 0;
+    border: none;
+    border-radius: var(--border-radius);
+}
+
+.adjemin-btn-primary {
+    background-color: var(--adjemin-primary);
+    /* background-image: url("/img/bg.png");
+    background-color: var(--adjemin-primary); */
+}
+
+.adjemin-btn-link {
+    display: block;
+    text-decoration: none;
+    color: var(--adjemin-secondary);
+    margin: 10px auto !important;
+    text-align: center;
+    font-weight: 600;
+    font-size: small;
+
+}
+
+.adjemin-btn-link:hover {
+    color: var(--adjemin-primary);
+}
+
+/* Paragraphs */
+#copyright-text {
+    margin-top: 5px;
+    color: grey !important;
+    text-align: center;
+    font-size: x-small;
+}
+
+/* Superclasses */
+::placeholder {
+    color: var(--adjemin-secondary);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+#adjeminpay-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+    /* margin-top: 50px; */
+    /*  */
+}
+
+#adjeminpay {
+    max-width: 450px;
+    /* min-width: 320px; */
+    /* flex: 1; */
+    /* flex-basis: 45%; */
+    margin: auto;
+}
+
+/* Adjemin success page */
+
+
+/*  */
+#adjemin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#adjemin-hero {
+    /* Height */
+    height: 150px;
+    width: 100%;
+    margin: auto;
+    padding-top: 20px;
+    background-image: url("/img/bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    background-size: cover;
+    border-radius: var(--border-radius-md);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#adjemin-amount-label {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-weight: 200;
+    font-size: normal;
+    opacity: var(--opacity-text);
+}
+
+#adjemin-amount {
+    color: #fff;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+#adjemin-amount sup {
+    opacity: var(--opacity-text);
+    font-size: medium;
+    font-weight: initial;
+}
+
+/* Form */
+#adjemin-form {
+    padding: 0px 5px;
+    font-weight: 600;
+    color: var(--adjemin-secondary);
+    font-size: small;
+}
+
+#adjemin-paymethod-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.adjemin-paymethod {
+    padding: 5px;
+    flex-basis: 40%;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* // background-color: var(--adjemin-secondary); */
+}
+
+.adjemin-active {
+    background-color: var(--adjemin-secondary-light);
+}
+
+.adjemin-inactive .adjemin-check {
+    opacity: 0;
+}
+
+.adjemin-check {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.adjemin-paymethod-img {
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  */
+/* .adjemin-label {
+        padding: 10px 0px;
+    } */
+.adjemin-input,
+.adjemin-inputgroup-full {
+    position: relative;
+    margin: 5px 0px;
+    /* padding: 0px; */
+    border: var(--border);
+    border-radius: var(--border-radius);
+}
+
+.adjemin-input,
+.adjemin-inputgroup-input {
+    font-weight: 600;
+    color: var(--adjemin-secondary);
+}
+
+.adjemin-input {
+    display: flex;
+    padding: 10px;
+    width: 100%;
+}
+
+.adjemin-input:focus,
+.adjemin-inputgroup-input {
+    outline-offset: 1px;
+    outline-color: var(--adjemin-secondary-lighter);
+    outline-width: 2px;
+}
+
+.adjemin-inputgroup {
+    width: 100%;
+    display: flex;
+    justify-content: stretch;
+}
+
+.adjemin-inputgroup-full {
+    display: flex;
+    justify-content: stretch;
+}
+
+.adjemin-inputgroup-full .adjemin-inputgroup-prepend {
+    background-color: var(--adjemin-secondary-light);
+    display: flex;
+}
+
+.adjemin-inputgroup-full .adjemin-inputgroup-prepend .adjemin-dialcode {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adjemin-inputgroup-full .adjemin-inputgroup-input {
+    padding-left: 5px;
+    border: 0px;
+    margin-bottom: 1px;
+}
+
+.adjemin-inputgroup-full .adjemin-inputgroup-append {
+    padding: 5px;
+    /* justify-self: end !important; */
+    margin-left: auto;
+}
+
+#adjemin-info {
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    /* text-align: center; */
+    text-align: justify;
+}
+
+#adjemin-title {
+    color: var(--adjemin-secondary) !important;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+}
+
+#adjemin-content {
+    color: var(--adjemin-secondary) !important;
+    font-weight: 500;
+    font-size: small;
+
+}
+
+#adjeminpay-sideblock {
+    flex-basis: 45%;
+    /* background-color: ; */
+    color: var(--adjemin-secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#adjeminpay-sideblock .adjemin-title {
+    font-weight: 500;
+    font-size: xx-large;
+    margin-bottom: 30px;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+#adjeminpay-sideblock .adjemin-img-block {
+    width: 50%;
+    margin: auto;
+}
+
+#adjeminpay-sideblock .adjemin-message .adjemin-title {
+    font-weight: 600;
+    font-size: x-large;
+    margin: 10px 0;
+}
+
+/* Telephones and tablets */
+@media only screen and (max-width: 768px) {
+    #adjeminpay {
+        max-width: 450px;
+        margin: auto;
+    }
+
+    #adjemin-hero {
+        height: 100px;
+    }
+
+    #adjemin-right{
+        display: none;
+    }
+}
+/* Tablets and desktops */
+@media only screen and (min-width: 426px){
+    #adjemin-paymethod-row {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0;
+    }
+
+    .adjemin-paymethod {
+        padding: 5px;
+        flex-basis: 45%;
+        border-radius: var(--border-radius-md);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .adjemin-paymethod p{
+        flex: 3;
+    }
+    .adjemin-paymethod-img {
+        padding: 10px;
+        flex: 1;
+    }
+    .adjemin-check {
+        height: 100%;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+}
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    #adjeminsuccess {
+        min-width: 500px;
+        border: var(--border);
+        border-radius: var(--border-radius-md);
+        padding: 30px 0;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -10%);
+    }
+
+}
+
+/* Desktops */
+@media only screen and (min-width: 769px) {
+    #adjeminpay-container {
+        min-width: 700px;
+        max-width: 1000px;
+        padding: 20px;
+        border: var(--border);
+        border-radius: var(--border-radius-md);
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -20%);
+    }
+
+    #adjemin-left,
+    #adjemin-right {
+        flex-basis: 49%;
+        height: 100%;
+    }
+
+
+    #adjeminpay,
+    #adjeminpay-sideblock {
+        /* min-width: 500px; */
+        width: 100% !important;
+        /* max-width: 500px; */
+        /* margin: auto; */
+    }
+
+    #adjeminpay {
+        /* min-width: 310px; */
+        margin: auto;
+    }
+
+    #adjeminsuccess{
+        position: relative;
+    }
+}

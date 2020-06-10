@@ -1,0 +1,152 @@
+/*  */
+#adjeminpay-container{
+
+}
+#adjemin-right{
+    padding: 20px;
+}
+#adjeminsuccess{
+    /* min-width: 500px; */
+    min-width: 100%;
+}
+#adjemin-success-img {
+    position: relative;
+    height: 500px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+
+#adjemin-success-img img{
+    position: absolute;
+}
+#img-left-hand{
+    top: 50%;
+    left: -30px;
+    transform: translate(0, -50%);
+}
+#img-right-hand{
+    top: 50%;
+    right: -30px;
+    transform: translate(0, -50%);
+}
+
+#img-succeed{
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+
+#adjemin-message{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    /* Height */
+}
+#adjemin-message-text{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+/* Queries */
+/* Telephones and tablets */
+@media only screen and (max-width: 768px) {
+    #adjeminpay, #adjeminpay-container, html, body{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    #adjeminsuccess{
+        min-width: auto;
+    }
+    #adjemin-success-img {
+        position: relative;
+        height: 300px;
+        margin: 20px 0;
+        overflow: hidden;
+    }
+
+    #adjemin-success-img img {
+        position: absolute;
+    }
+
+    #img-left-hand {
+        top: 50%;
+        left: -30px;
+        transform: translate(0, -50%);
+    }
+
+    #img-right-hand {
+        top: 50%;
+        right: -30px;
+        transform: translate(0, -50%);
+    }
+
+    #img-succeed {
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+
+    #adjemin-message {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        /* Height */
+    }
+
+    #adjemin-message-text {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+
+}
+/* Tablets and desktops */
+@media only screen and (min-width: 426px) {
+    
+}
+/* Desktops */
+@media only screen and (min-width: 769px) {
+    /* #adjeminsuccess { */
+        /* background-color: red;
+        position: relative !important;
+        max-width: 200px !important;
+        border: none !important;
+        top: 0 !important;
+        left: 0 !important; */
+        /* width: 100%; */
+    /* } */
+    #adjemin-success-img {
+        position: relative;
+        height: 300px;
+        margin: 20px 0;
+        overflow: hidden;
+    }
+
+    #adjemin-success-img img {
+        position: absolute;
+    }
+
+    #img-left-hand {
+        top: 50%;
+        left: -30px;
+        transform: translate(0, -50%);
+    }
+
+    #img-right-hand {
+        top: 50%;
+        right: -30px;
+        transform: translate(0, -50%);
+    }
+
+    #img-succeed {
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+}

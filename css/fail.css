@@ -1,0 +1,28 @@
+/* ***  */
+/* Adjemin Fail */
+/* Fail */
+#adjeminfail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    /* Height */
+    min-height: 60vh;
+    margin: auto;
+    text-align: center;
+}
+
+#adjemin-message-row {
+    width: 70% !important;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#adjemin-message {
+    margin-top: 20px;
+
+}
