@@ -98,10 +98,17 @@ body {
     align-items: center;
     max-width: 1000px;
     margin: auto;
-    margin-top: 50px
+    /* margin-top: 50px; */
     /* margin-top: 50px; */
     /*  */
+    max-height: 100vh;
 }
+
+/* @media only screen and (max-height: 700px){
+    #adjeminpay-container {
+        height: 100vh;
+    }
+} */
 
 #adjeminpay {
     max-width: 450px;
@@ -158,6 +165,10 @@ body {
     opacity: var(--opacity-text);
     font-size: medium;
     font-weight: initial;
+}
+
+#ajemin-choose-paymethod-helper-text{
+    margin: 10px 0;
 }
 
 /* Form */
@@ -403,7 +414,7 @@ body {
         padding-top: 50px;
         border: var(--border);
         border-radius: var(--border-radius-md);
-        margin: auto;
+        /* margin: auto; */
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -411,6 +422,8 @@ body {
         top: 40%;
         left: 50%;
         transform: translate(-50%, -40%);
+        /* max-height: 70vh; */
+
     }
 
     #adjemin-left,
