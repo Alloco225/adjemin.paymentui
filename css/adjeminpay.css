@@ -98,6 +98,7 @@ body {
     align-items: center;
     max-width: 1000px;
     margin: auto;
+    margin-top: 50px
     /* margin-top: 50px; */
     /*  */
 }
@@ -224,6 +225,7 @@ body {
 .adjemin-inputgroup-input {
     font-weight: 600;
     color: var(--adjemin-secondary);
+    width: 100%;
 }
 
 .adjemin-input {
@@ -396,7 +398,9 @@ body {
     #adjeminpay-container {
         min-width: 700px;
         max-width: 1000px;
+        /* margin-top: 100px; */
         padding: 20px;
+        padding-top: 50px;
         border: var(--border);
         border-radius: var(--border-radius-md);
         margin: auto;
@@ -404,9 +408,9 @@ body {
         justify-content: space-around;
         align-items: center;
         position: absolute;
-        top: 20%;
+        top: 40%;
         left: 50%;
-        transform: translate(-50%, -20%);
+        transform: translate(-50%, -40%);
     }
 
     #adjemin-left,
