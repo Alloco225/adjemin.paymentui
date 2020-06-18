@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Mobile Css -->
+    <!-- <link rel="stylesheet" href="css/adjeminpay-mobile.css"> -->
+    <link rel="stylesheet" href="css/adjeminpay.css">
+    <title>AdjeminPay</title>
+</head>
+
+<body>
+    <div id="adjeminpay-container">
+        <div id="adjemin-left">
+            <div id="adjeminpay">
+                <div id="adjemin-header">
+                    <div id="merchant-logo">
+                        <img src="img/merchant-logo.png" alt="Logo marchant">
+                    </div>
+                    <div id="adjeminpay-logo">
+                        <!-- <a href="" class="adjemin-btn"> -->
+                        <!-- <p id="adjeminpay-logo-text">Adjeminpay</p> -->
+                        <!-- </a> -->
+                        <img src="img/adjemin-logo.png" alt="Logo adjemin">
+                    </div>
+                </div>
+                <div id="adjemin-hero">
+                    <div id="adjemin-amount-label">
+                        Total à payer
+                    </div>
+                    <div id="adjemin-amount">
+                        10 000
+                        <sup>
+                            FCFA
+                        </sup>
+                    </div>
+                </div>
+                <form action="" id="adjemin-form">
+                    <div class="row" id="ajemin-choose-paymethod-helper-text">
+                        Sélectionnez un moyen de paiement
+                    </div>
+                    <div class="row" id="adjemin-paymethod-row">
+                        <div id="adjemin-paymethod-mobilemoney" class="adjemin-paymethod adjemin-active">
+                            <div class="adjemin-check">
+                                <img src="img/check.png" class="adjemin-checked" alt="checked">
+                            </div>
+                            <div class="adjemin-paymethod-img">
+                                <img src="img/mobile-money.png" class="adjemin-img" alt="Mobile Money">
+                            </div>
+                            <p>Mobile Money</p>
+                        </div>
+                        <div id="adjemin-paymethod-card" class="adjemin-paymethod  adjemin-inactive">
+                            <div class="adjemin-check">
+                                <img src="img/check.png" class=" adjemin-checked" alt="checked">
+                            </div>
+                            <div class="adjemin-paymethod-img">
+                                <img src="img/card.png" class="adjemin-img" alt="Carte Bancaire">
+                            </div>
+                            <p>Carte Bancaire</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="" class="adjemin-label">Nom et prénoms</label> <br>
+                        <div class="adjemin-inputgroup">
+                            <input type="text" class="adjemin-input" placeholder="Amane Hosanna">
+                        </div>
+                    </div>
+                    <!-- Tab = fn(#adjemin-paymethod-row) -->
+                    <div class="row">
+                        <label for="" class="adjemin-label">Compte Mobile Money</label> <br>
+                        <div class="adjemin-inputgroup-full">
+                            <div class="adjemin-inputgroup-prepend">
+                                <div class="adjemin-dialcode">
+                                    <img src="img/flag.png" class="adjemin-img adjemin-dialcode-img" alt="DialCode">
+                                    <span id="adjemin-dialcode">(+225)</span>
+                                </div>
+                            </div>
+                            <input type="phone" class="adjemin-inputgroup-input" placeholder="74 93 68 26">
+                            <div class="adjemin-inputgroup-append">
+                                <!-- <div class="adjemin-operator"> -->
+                                    <img src="img/orange-money.png" class="adjemin-img" alt="">
+                                <!-- </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Auth code -->
+                    <div class="row">
+                        <label for="" class="adjemin-label">Code d'autorisation</label> <br>
+                        <div class="adjemin-inputgroup">
+                            <input type="text" class="adjemin-input" placeholder="">
+                        </div>
+                    </div>
+                    <!-- Info div -->
+                    <div class="row">
+                        <div id="adjemin-info" class="adjemin-border adjemin-active">
+                            Pour obtenir votre code d'autorisation Orange Money, merci de taper <b>#144#</b>, choisir l'obtion
+                            <b>8</b> puis l'option <b>2</b>. Entrez votre code secret et validez.
+                        </div>
+                    </div>
+                    <!-- Submit -->
+                    <div class="row">
+                        <a href="success.html" class="adjemin-btn adjemin-btn-primary">
+                            Payer
+                        </a>
+                    </div>
+                    <!--  -->
+                    <div class="row">
+                        <a href="fail.html" class="adjemin-btn-link">
+                            Des difficultés pour payer ?
+                        </a>
+                    </div>
+                    <!-- Copyrights -->
+                    <div class="row">
+                        <p id="copyright-text">
+                            Copyright By <a href="" class="adjemin-btn-disabled">Adjemin</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="adjemin-right">
+            <div id="adjeminpay-sideblock">
+                <div class="adjemin-title">
+                    Adjemin <span class="bold">
+                        Pay
+                    </span>
+                </div>
+                <div class="adjemin-img-block">
+                    <img src="img/adjeminpay.png" class="adjemin-img" alt="">
+                </div>
+                <div>
+                    <div class="adjemin-message">
+                        <div class="adjemin-title">
+                            Bienvenue sur Adjemin Pay.
+                        </div>
+                        <div class="adjemin-content">
+                            Nous accélérons la digitalisation des
+                            entreprises en Afrique pour vendre, recevoir
+                            des paiements, émettre des paiements et
+                            assurer une meilleure gestion.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
