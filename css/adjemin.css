@@ -74,6 +74,19 @@ img.gluid{
     position: relative;
 }
 
+.slides-container {
+    width: 100%;
+    margin: auto;
+}
+.img-circle{
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+
+
+
+
 .slide-control{
     /* display: block; */
     position: absolute;
