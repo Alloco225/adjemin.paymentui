@@ -1,6 +1,7 @@
 :root {
     --primary: #094E92;
     --primary-pale: #094e920c;
+    --primary-not-too-pale: #094e922f;
     --primary-dark: hsla(210, 87%, 27%, 0.842);
     --primary-darker: #053A6C;
     --main: #094E92;
@@ -18,7 +19,7 @@
 body {
     /* background-color: white; */
     font-family: 'Montserrat', sans-serif;
-    
+    transition: all .3s ease-in;
 }
 p, a {
     font-weight: 500;
@@ -55,7 +56,7 @@ a.inline-link:hover{
 a.navlink{
     color: var(--primary);
     font-weight: bold;
-    margin-right: 20px;
+    margin-left: 20px;
 }
 
 img.icon {
@@ -85,7 +86,27 @@ img.gluid{
     justify-content: center;
     align-items: center;
     background-color: white;
+    transition: .3s ease-in-out;
+    /* box-shadow: 2px 2px 20px 5px var(--primary-not-too-pale), */
+    /* -2px -2px 20px 5px var(--primary-not-too-pale); */
 }
+.shadow.shadow-paler{
+    box-shadow: 2px 2px 40px 2px var(--primary-pale),
+    -2px -2px 40px 2px var(--primary-pale);
+    
+}
+.slide-control:hover{
+    /* padding: 10px; */
+    border: 10px solid var(--primary-not-too-pale);
+}
+.slide-control.left-button:hover{
+    transform: translate(-20px, -50%);
+}
+.slide-control.right-button:hover{
+    transform: translate(20px, -50%);
+}
+
+
 .slide-control.left-button{
     left: -25px;
 }
@@ -192,6 +213,9 @@ img.gluid{
 }
 
 @media screen and (max-width: 767px){
+    a.navlink {
+        margin-left: 5px;
+    }
     .skew-bottom{
         padding-bottom: 200px;
     }
@@ -242,6 +266,12 @@ img.gluid{
 }
 
 @media screen and (min-width: 768px){
+    a.navlink {
+        margin-left: 10px;
+    }
+    .bg-img.bg-2{
+        background-position: right;
+    }
     .row.content{
         position: absolute;
         top: 50%;

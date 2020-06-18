@@ -16,13 +16,67 @@
 </head>
 
 <body class="">
-    <!-- Desktop navigation -->
     <nav>
         <div class="container">
-            <div class="col-12">
+        <!-- Desktop navigation -->
+            <div class="col-12 d-none d-md-none d-lg-block">
                 <div class="row d-flex justify-content-between align-items-center py-3">
-                    <a href="/" class="">
-                        <img src="img/index/brand.png" alt="" width="150px">
+                    <a href="/" class="brand">
+                        <img src="img/index/brand.png" alt="" width="130px">
+                    </a>
+                    <!-- Desktop nav -->
+                    <div class="navlinks d-md-flex justify-content-between align-items-center d-none">
+                        <a href="" class="navlink">Solution</a>
+                        <a href="" class="navlink">Comment ça marche ?</a>
+                        <a href="" class="navlink d-lg-none d-xl-block">Sécurité</a>
+                        <a href="" class="navlink">Développeurs</a>
+                        <a href="" class="navlink">
+                            <!-- // TODO ent=ering door icon -->
+                            <img src="img/index/login.png" alt="" width="22px" class="icon">
+                            Se connecter
+                        </a>
+                        <a href="" class="navlink btn btn-outline-primary">
+                            Créer un compte
+                            <!-- // TODO person icon -->
+                            <img src="img/index/user.png" alt="" class="icon" width="22px">
+                            <i></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        <!-- Tablets navigation -->
+            <div class="col-12 d-none d-md-block d-lg-none">
+                <div class="row d-flex justify-content-between align-items-center py-3">
+                    <a href="/" class="brand">
+                        <img src="img/index/brand.png" alt="" width="140px">
+                    </a>
+                    <!-- Tablets nav -->
+                    <div class="navlinks d-md-none justify-content-between align-items-center d-none">
+                        <a href="" class="navlink">Solution</a>
+                        <a href="" class="navlink">Comment ça marche ?</a>
+                        <a href="" class="navlink">Sécurité</a>
+                        <a href="" class="navlink">Développeurs</a>
+                        <a href="" class="navlink">
+                    </div>
+                    <div>
+                            <!-- // TODO ent=ering door icon -->
+                            <img src="img/index/login.png" alt="" width="22px" class="icon">
+                            Se connecter
+                        </a>
+                        <a href="" class="navlink btn btn-outline-primary">
+                            Créer un compte
+                            <!-- // TODO person icon -->
+                            <img src="img/index/user.png" alt="" class="icon" width="22px">
+                            <i></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        <!-- Mobile navigation -->
+            <div class="col-12 d-block d-md-none">
+                <div class="row d-flex justify-content-between align-items-center py-3">
+                    <a href="/" class="brand">
+                        <img src="img/index/brand.png" alt="" class="" width="200px">
                     </a>
                     <!-- Desktop nav -->
                     <div class="navlinks d-md-flex justify-content-between align-items-center d-none">
@@ -30,19 +84,20 @@
                         <a href="" class="navlink">Comment ça marche ?</a>
                         <a href="" class="navlink">Sécurité</a>
                         <a href="" class="navlink">Développeurs</a>
-                        <a href="" class="navlink">
+                    </div>
+                    <div>
+                        <a href="" class="navlink d-none">
                             <!-- // TODO ent=ering door icon -->
                             <img src="img/index/login.png" alt="" width="22px" class="icon">
                             Se connecter
                         </a>
-                        <a href="" class="btn btn-outline-primary">
+                        <a href="" class="navlink btn btn-outline-primary">
                             Créer un compte
                             <!-- // TODO person icon -->
-                            <img src="img/index/user.png" alt="" class="icon" width="22px">
-                            <i></i>
+                            <!-- <img src="img/index/user.png" alt="" class="icon" width="22px">
+                            <i></i> -->
                         </a>
                     </div>
-    
                 </div>
             </div>
         </div>
@@ -166,7 +221,7 @@
     </section>
     <section id="testimonials" class="py-4 mb-5 text-center">
         <div class="container mb-5">
-                <h2 class="title text-primary">
+                <h2 class="title text-primary mb-4">
                     Ce que nos clients disent de nous
                 </h2>
             
@@ -206,10 +261,10 @@
                     <div class="circle-indicator"></div>
                 </div>
 
-                <a href="#" class="left-button slide-control shadow" onclick="slideLeft();">
+                <a href="#" class="left-button slide-control shadow shadow-paler" onclick="slideLeft();">
                     <img src="img/index/left.png" alt="" width="" class="img-fluid">
                 </a>
-                <a href="#" class="right-button slide-control shadow" onclick="slideRight()">
+                <a href="#" class="right-button slide-control shadow shadow-paler" onclick="slideRight()">
                     <img src="img/index/right.png" alt="" width="" class="img-fluid">
                 </a>
             </div>
@@ -223,8 +278,9 @@
             <div class="row">
                 <div class="col-md-5 pb-5">
                     <div class="footer-desc-text">
-
-                        <h2 class="title pb-2 pt-5 pt-md-0">AdjeminPay</h2>
+                        <a href="/" class="text-white">
+                            <h2 class="title pb-2 pt-5 pt-md-0">AdjeminPay</h2>
+                        </a>
                         <p>
                             AdjeminPay propose aux entreprises et institutions financières une suite de solutions digitales
                             multicanales qui facilite l’émission et la réception de paiements sur site internet ou
