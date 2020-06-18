@@ -9,146 +9,278 @@
         rel="stylesheet">
     <!-- Mobile Css -->
     <!-- <link rel="stylesheet" href="css/adjeminpay-mobile.css"> -->
-    <link rel="stylesheet" href="css/adjeminpay.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/adjemin.css">
     <title>AdjeminPay - Welcome</title>
+
 </head>
 
-<body>
-    <div id="adjeminpay-container">
-        <div id="adjemin-left">
-            <div id="adjeminpay">
-                <div id="adjemin-header">
-                    <div id="merchant-logo">
-                        <img src="img/merchant-logo.png" alt="Logo marchant">
-                    </div>
-                    <div id="adjeminpay-logo">
-                        <!-- <a href="" class="adjemin-btn"> -->
-                        <!-- <p id="adjeminpay-logo-text">Adjeminpay</p> -->
-                        <!-- </a> -->
-                        <img src="img/adjemin-logo.png" alt="Logo adjemin">
-                    </div>
-                </div>
-                <div id="adjemin-hero">
-                    <div id="adjemin-amount-label">
-                        Total à payer
-                    </div>
-                    <div id="adjemin-amount">
-                        10 000
-                        <sup>
-                            FCFA
-                        </sup>
-                    </div>
-                </div>
-                <form action="" id="adjemin-form">
-                    <div class="row" id="ajemin-choose-paymethod-helper-text">
-                        Sélectionnez un moyen de paiement
-                    </div>
-                    <div class="row" id="adjemin-paymethod-row">
-                        <div id="adjemin-paymethod-mobilemoney" class="adjemin-paymethod adjemin-active">
-                            <div class="adjemin-check">
-                                <img src="img/check.png" class="adjemin-checked" alt="checked">
-                            </div>
-                            <div class="adjemin-paymethod-img">
-                                <img src="img/mobile-money.png" class="adjemin-img" alt="Mobile Money">
-                            </div>
-                            <p>Mobile Money</p>
-                        </div>
-                        <div id="adjemin-paymethod-card" class="adjemin-paymethod  adjemin-inactive">
-                            <div class="adjemin-check">
-                                <img src="img/check.png" class=" adjemin-checked" alt="checked">
-                            </div>
-                            <div class="adjemin-paymethod-img">
-                                <img src="img/card.png" class="adjemin-img" alt="Carte Bancaire">
-                            </div>
-                            <p>Carte Bancaire</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <label for="" class="adjemin-label">Nom et prénoms</label> <br>
-                        <div class="adjemin-inputgroup">
-                            <input type="text" class="adjemin-input" placeholder="Amane Hosanna">
-                        </div>
-                    </div>
-                    <!-- Tab = fn(#adjemin-paymethod-row) -->
-                    <div class="row">
-                        <label for="" class="adjemin-label">Compte Mobile Money</label> <br>
-                        <div class="adjemin-inputgroup-full">
-                            <div class="adjemin-inputgroup-prepend">
-                                <div class="adjemin-dialcode">
-                                    <img src="img/flag.png" class="adjemin-img adjemin-dialcode-img" alt="DialCode">
-                                    <span id="adjemin-dialcode">(+225)</span>
-                                </div>
-                            </div>
-                            <input type="phone" class="adjemin-inputgroup-input" placeholder="74 93 68 26">
-                            <div class="adjemin-inputgroup-append">
-                                <!-- <div class="adjemin-operator"> -->
-                                <img src="img/orange-money.png" class="adjemin-img" alt="">
-                                <!-- </div> -->
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Auth code -->
-                    <div class="row">
-                        <label for="" class="adjemin-label">Code d'autorisation</label> <br>
-                        <div class="adjemin-inputgroup">
-                            <input type="text" class="adjemin-input" placeholder="">
-                        </div>
-                    </div>
-                    <!-- Info div -->
-                    <div class="row">
-                        <div id="adjemin-info" class="adjemin-border adjemin-active">
-                            Pour obtenir votre code d'autorisation Orange Money, merci de taper <b>#144#</b>, choisir
-                            l'obtion
-                            <b>8</b> puis l'option <b>2</b>. Entrez votre code secret et validez.
-                        </div>
-                    </div>
-                    <!-- Submit -->
-                    <div class="row">
-                        <a href="success.html" class="adjemin-btn adjemin-btn-primary">
-                            Payer
+<body class="">
+    <!-- Desktop navigation -->
+    <nav>
+        <div class="container">
+            <div class="col-12">
+                <div class="row d-flex justify-content-between align-items-center py-3">
+                    <a href="/" class="">
+                        <img src="img/index/brand.png" alt="" width="150px">
+                    </a>
+                    <!-- Desktop nav -->
+                    <div class="navlinks d-md-flex justify-content-between align-items-center d-none">
+                        <a href="" class="navlink">Solution</a>
+                        <a href="" class="navlink">Comment ça marche ?</a>
+                        <a href="" class="navlink">Sécurité</a>
+                        <a href="" class="navlink">Développeurs</a>
+                        <a href="" class="navlink">
+                            <!-- // TODO ent=ering door icon -->
+                            <img src="img/index/login.png" alt="" width="22px" class="icon">
+                            Se connecter
+                        </a>
+                        <a href="" class="btn btn-outline-primary">
+                            Créer un compte
+                            <!-- // TODO person icon -->
+                            <img src="img/index/user.png" alt="" class="icon" width="22px">
+                            <i></i>
                         </a>
                     </div>
-                    <!--  -->
-                    <div class="row">
-                        <a href="fail.html" class="adjemin-btn-link">
-                            Des difficultés pour payer ?
-                        </a>
+    
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section id="showcase" class="skewwy skew-bottom text-white py-5 py-md-0">
+        <div class="container pb-5 pb-md-0">
+            <div class="row content px-lg-5">
+                <div class="col-md-6 d-flex align-items-between">
+                    <div class="showcase-text">
+                        <h2 class="title">
+                            Agrégateur simple et fiable de paiements digitaux
+                        </h2>
+                        <div class="col-md-10 pl-0 mt-md-4">
+                            <p>
+                                Nous accélérons la digitalisation des entreprises en Afrique à travers des solutions digitales pour
+                                vendre, recevoir des paiements, émettre des paiements et assurer une meilleure gestion.
+                            </p>
+                        </div>
+                        <a href="" class="btn btn-secondary px-5 mt-md-4  font-weight-bold">Commencer</a>
                     </div>
-                    <!-- Copyrights -->
-                    <div class="row">
-                        <p id="copyright-text">
-                            Copyright By <a href="" class="adjemin-btn-disabled">Adjemin</a>
+                </div>
+                <div class="col-md-6 d-none d-md-block bg-img">
+                    <!-- <img src="img/index/showcase_.png" alt="" class="img-fluid" height=""> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="integrate" class="py-5 text-center mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-5">
+                    <h2 class="title text-primary">
+                        Intégrez Adjeminpay maintenant
+                    </h2>
+                    <p class="subtitle text-primary">
+                        Que votre plateforme soit web ou mobile, le processus d’intégration reste le même
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="img/index/person.png" alt="Création d'un compte Adjeminpay" class="img-fluid mb-4" width="230px">
+                    <p class="text-primary font-weight-bold">Création d'un compte Adjeminpay</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/index/key.png" alt="Api Key" class="img-fluid mb-4" width="230px">
+                    <p class="text-primary font-weight-bold">Obtention de la clé d'API</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/index/sdk.png" alt="SDK" class="img-fluid mb-4" width="230px">
+                    <p class="text-primary font-weight-bold">Intégration du plugin ou du SDK sur votre plateforme</p>
+                </div>
+            </div>
+            <div class="row">
+                <a href="" class="btn btn-secondary font-weight-bold px-5 mx-auto">En savoir plus</a>
+            </div>
+        </div>
+    </section>
+    <section id="solution" class="bg-pale py-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-6 d-md-none mb-2">
+                    <img src="img/index/solution.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="title text-primary">
+                        Une seule solution pour tous vos paiements en ligne
+                    </h2>
+                    <p class="text-primary mt-3">
+                        Que vous soyez une institution financière (microfinance, assurance), un commerce en ligne, un
+                        fournisseur de services en ligne ou un service de collecte de fonds, que vous ayez une
+                        plateforme web ou mobile, AdjeminPay est la plateforme idéale à votre disposition pour recevoir
+                        vos paiements à travers une seule interface, de partout dans le monde.
+                    </p>
+                </div>
+                <div class="col-md-6 d-none d-md-block bg-img bg-2">
+                    <!-- <img src="img/index/solution.png" alt="" class="img-fluid" style="max-width: 635px;"> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="advantages" class="py-5 text-center">
+        <div class="container">
+            <div class="row">
+                <h2 class="title text-primary text-center mx-auto mb-3">Pourquoi AdjeminPay ?</h2>
+                <p class="text-primary">
+                    Nous sommes convaincus que le digital est un facteur de croissance et de survie pour les entreprises
+                    quelles que soient leur taille et domaine. C’est dans cette optique que nous nous engageons à les
+                    aider à maximiser leurs ventes à travers la digitalisation.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 p-4">
+                    <div class="p-4 border shadow text-center d-flex flex-column align-items-center">
+                        <img src="img/index/support.png" alt="Support" class="img-fluid mt-5" width="100px">
+                        <h4 class="head my-2 font-weight-bold text-primary">
+                            Une relation de proximité
+                        </h4>
+                        <p class="mb-5">
+                            Vous êtes notre priorité ! Il est important pour nous que nos clients se sentent toujours bien
+                            et que la qualité de nos relations soit toujours au top. C’est pour cela que nous restons
+                            continuellement à votre écoute et présents pour vous accompagner dans votre croissance
                         </p>
                     </div>
-                </form>
-            </div>
-        </div>
-        <div id="adjemin-right">
-            <div id="adjeminpay-sideblock">
-                <div class="adjemin-title">
-                    Adjemin <span class="bold">
-                        Pay
-                    </span>
                 </div>
-                <div class="adjemin-img-block">
-                    <img src="img/adjeminpay.png" class="adjemin-img" alt="">
-                </div>
-                <div>
-                    <div class="adjemin-message">
-                        <div class="adjemin-title">
-                            Bienvenue sur Adjemin Pay.
-                        </div>
-                        <div class="adjemin-content">
-                            Nous accélérons la digitalisation des
-                            entreprises en Afrique pour vendre, recevoir
-                            des paiements, émettre des paiements et
-                            assurer une meilleure gestion.
-                        </div>
+                <div class="col-md-6 p-4 d-flex">
+                    <div class="p-4 border shadow text-center d-flex flex-column align-items-center">
+                        <img src="img/index/edit-tools.png" alt="Service" class="img-fluid mt-5" width="100px">
+                        <h4 class="head my-2 font-weight-bold text-primary">
+                            Un service personnalisé
+                        </h4>
+                        <p class="mb-5">
+                            Parce que chaque client est unique, nous nous efforçons de répondre à vos besoins en vous
+                            offrant des services sur mesure adaptés à votre entreprise. Nous nous concentrons sur votre
+                            problème et nous vous apportons la solution
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    <section id="testimonials" class="py-4 mb-5 text-center">
+        <div class="container mb-5">
+                <h2 class="title text-primary">
+                    Ce que nos clients disent de nous
+                </h2>
+            
+            <div id="testimony-slider" class="row">
+                <div class="slides-container border shadow p-5">
+                    <div class="slide-item active">
+                        <img src="img/index/testimony_1.png" alt="Aristide Kone" class="img-fluid img-circle img-small">
+                        <p class="quote">" AdjeminPay est très efficace et simple à utiliser, je vous le recommande
+                            vivement pour vos
+                            différents paiement et solution web et mobile. " </p>
+                            <h5 class="text-primary font-weight-bold">
+                                Aristide Koné
+                            </h5>
+                    </div>
+                    <div class="slide-item">
+                        <img src="img/index/testimony_1.png" alt="Aristide Kone" class="img-fluid img-circle img-small">
+                        <p class="quote">" AdjeminPay est très efficace et simple à utiliser, je vous le recommande
+                            vivement pour vos
+                            différents paiement et solution web et mobile. " </p>
+                            <h5 class="text-primary font-weight-bold">
+                                Aristide Koné
+                            </h5>
+                    </div>
+                    <div class="slide-item">
+                        <img src="img/index/testimony_1.png" alt="Aristide Kone" class="img-fluid img-circle img-small">
+                        <p class="quote">" AdjeminPay est très efficace et simple à utiliser, je vous le recommande
+                            vivement pour vos
+                            différents paiement et solution web et mobile. " </p>
+                            <h5 class="text-primary font-weight-bold">
+                                Aristide Koné
+                            </h5>
+                    </div>
+                </div>
+                <div class="slide-indicators">
+                    <div class="circle-indicator active"></div>
+                    <div class="circle-indicator"></div>
+                    <div class="circle-indicator"></div>
+                </div>
+
+                <a href="#" class="left-button slide-control shadow" onclick="slideLeft();">
+                    <img src="img/index/left.png" alt="" width="" class="img-fluid">
+                </a>
+                <a href="#" class="right-button slide-control shadow" onclick="slideRight()">
+                    <img src="img/index/right.png" alt="" width="" class="img-fluid">
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer id="footer" class="text-white pb-5 skewwy skew-top bg-primary-darker">
+        <a href="" id="floating-help-button" title="Vous avez besoin d'aide ?">
+            <img src="img/index/msg.png" alt="Message" class="img-fluid" width="70px">
+        </a>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 pb-5">
+                    <div class="footer-desc-text">
+
+                        <h2 class="title pb-2 pt-5 pt-md-0">AdjeminPay</h2>
+                        <p>
+                            AdjeminPay propose aux entreprises et institutions financières une suite de solutions digitales
+                            multicanales qui facilite l’émission et la réception de paiements sur site internet ou
+                            application mobile ainsi que la collecte et le déboursement de paiements de masse.
+                        </p>
+                    </div>
+                    <div class="copyrights mt-4 d-none d-md-block">
+                        © 2020
+                        <a href="// TODO" class="inline-link">
+                            Adjemin
+                        </a>
+                        . Tous Droits Réservés.
+                    </div>
+                </div>
+                <div class="col-md pl-md-4 pb-5 d-flex flex-column justify-content-between">
+                    <div class="links mb-4 mb-md-0">
+                        <h4 class="title pb-2">A propos</h4>
+                        <a href="" class="text-link">Qui sommes-nous ?</a>
+                        <a href="" class="text-link">Solutions</a>
+                        <a href="" class="text-link">Frais de services</a>
+                        <a href="" class="text-link">Partenaires</a>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-end pr-md-5">
+                        <a href="" class="inline-link"><img src="img/index/fb.png" alt="" class="img-fluid"
+                                width="30px"></a>
+                        <a href="" class="inline-link"><img src="img/index/in.png" alt="" class="img-fluid"
+                                width="30px"></a>
+                        <a href="" class="inline-link"><img src="img/index/tw.png" alt="" class="img-fluid"
+                                width="30px"></a>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <h4 class="title pb-2">Ressources</h4>
+                    <a href="" class="text-link">
+                        Comment ça marche
+                    </a>
+                    <a href="" class="text-link">
+                        Conditions d’utilisation
+                    </a>
+                    <a href="" class="text-link">
+                        Politique de confidentialité
+                    </a>
+                    <a href="" class="text-link">
+                        Contact
+                    </a>
+                </div>
+            </div> <!-- /row -->
+            <div class="copyrights mt-5 d-md-none d-block">
+                © 2020
+                <a href="// TODO" class="inline-link">
+                    Adjemin
+                </a>
+                . Tous Droits Réservés.
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
