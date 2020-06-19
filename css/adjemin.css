@@ -168,7 +168,7 @@ img.gluid{
 
 #showcase {
     /* position: relative; */
-    height: 90vh;
+    /* height: 90vh; */
     /* background:; */
     background-image:
     /* url(../img/index/showcase.png), */
@@ -179,7 +179,6 @@ img.gluid{
     overflow: hidden !important;
 
 }
-
 .skewwy{
     position: relative;
 }
@@ -288,8 +287,8 @@ img.gluid{
     }
     .row.content{
         position: absolute;
-        top: 50%;
-        transform: translate(0, -50%);
+        top: 40%;
+        transform: translate(0, -40%);
         /* height: 20%; */
         /* background-color: blue; */
     }
@@ -305,6 +304,11 @@ img.gluid{
     background-position: center right; */
 
     }
+    
+    #showcase-container {
+        height: 80%;
+    }
+
 }
 
 .bg-img{
@@ -325,6 +329,10 @@ img.gluid{
 }
 .bg-primary-darker{
     background-color: var(--primary-darker);
+}
+
+.accent {
+    color: var(--accent) !important;
 }
 
 
