@@ -1,9 +1,13 @@
 :root {
     --primary: #094E92;
+    --primary-light:#0b58a5;
     --primary-pale: #094e920c;
     --primary-not-too-pale: #094e922f;
     --primary-dark: hsla(210, 87%, 27%, 0.842);
     --primary-darker: #053A6C;
+    --gradient-start_: #0B559F;
+    --gradient-start: #0b58a5;
+    --gradient-end: #043563;
     --main: #094E92;
     --secondary: #2DC068;
     --secondary-dark: #26a85a;
@@ -172,7 +176,7 @@ img.gluid{
     /* background:; */
     background-image:
     /* url(../img/index/showcase.png), */
-    linear-gradient(to bottom right, #0B559F, #043563);
+    linear-gradient(to bottom right, var(--gradient-start), var(--gradient-end));
     /* background-repeat: no-repeat;
     background-size: contain;
     background-position: center right; */
@@ -298,7 +302,7 @@ img.gluid{
         /* background:; */
         background-image:
             /* url(../img/index/showcase.png), */
-            linear-gradient(to bottom right, #0B559F, #043563);
+            linear-gradient(to bottom right, var(--gradient-start), var(--gradient-end));
         /* background-repeat: no-repeat;
     background-size: contain;
     background-position: center right; */
