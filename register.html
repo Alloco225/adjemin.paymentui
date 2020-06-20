@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Mobile Css -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/adjemin.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <title>AdjeminPay - Register</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="">
+        <div id="fixed-area" class="bg-gradient text-white text-center">
+            <div class="container px-4">
+                <div class="brand">
+                    <img src="img/adjemin-logo-w.png" alt="" class="img-fluid">
+                </div>
+                <div class="text">
+                    <h5>Regain control</h5>
+                    <h2 class="title">
+                        Agrégateur simple et fiable de <span class="accent">
+                            paiements digitaux
+                        </span>
+                    </h2>
+                </div>
+            </div>
+        </div> <!-- /fixed area -->
+        <div id="flex-area" class="">
+            <div class="top-bar d-flex justify-content-between justify-content-lg-end align-items-center ml-auto pt-4">
+                <a href="/" class="d-lg-none ml-md-3 ml-2">
+                    <img src="img/index/brand.png" alt="" width="150px">
+                </a>
+                <span>
+                    <span class="font-weight-light d-none d-sm-inline">
+                        Vous avez un compte ?
+                    </span>
+                    <a href="login.html" class="btn btn-primary mx-md-3 mr-2">
+                        Connectez-vous
+                    </a>
+                </span>
+            </div>
+            <div id="form-area" class=" ">
+                <div id="formarea-container" class="container-fluid">
+                    <div class="container-fluid mt-5" id="form-container">
+                        <div class="header h4 mb-4">
+                            Inscription
+                        </div>
+                        <form action="">
+                            <!-- Perso info inputgroup -->
+                            <div class="inputgroup">
+                                <div class="input-title py-3">Informations Personnelles</div>
+                                <!-- First name last name -->
+                                <div class="cool-row ">
+                                    <div class="pt-3 cool-input-half">
+                                        <div class="cool-input">
+                                            <span class="prepend">
+                                                <i class="fa fa-user" aria-hidden="true"></i>
+                                            </span>
+                                            <input type="text" class="input" placeholder="Nom">
+                                        </div>
+                                    </div> <!-- /pt-3 cool-input-half -->
+                                    <div class="pt-3 cool-input-half">
+                                        <div class="cool-input">
+                                            <span class="prepend">
+                                                <i class="fa fa-user" aria-hidden="true"></i>
+                                            </span>
+                                            <input type="text" class="input" placeholder="Prénom">
+                                        </div>
+                                    </div> <!-- /pt-3 cool-input-half -->
+                                </div> <!-- /cool-row -->
+                                <!-- Email and phone -->
+                                <div class="cool-row">
+                                    <div class="pt-3 cool-input-half">
+                                        <div class="cool-input">
+                                            <span class="prepend">
+                                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                            </span>
+                                            <input type="email" class="input" placeholder="Adresse email">
+                                        </div>
+                                    </div> <!-- /pt-3 cool-input-half -->
+                                    <div class="pt-3 cool-input-half position-relative">
+                                        <div class="cool-input">
+                                            <!-- <span class="prepend">
+                                                <i class="fa fa-user" aria-hidden="true"></i>
+                                            </span> -->
+                                            <!-- <div> -->
+                                            <div name="" id="" class="prepend prepend-select">
+                                                <a href="#"
+                                                onclick="event.preventDefault();displayFlagsCountainer();" class="selected-flag flag-select">
+                                                    <span id="selected-flag" class="country-flag">
+                                                        <img src="img/flags/ci.png" alt="" width="20px">
+                                                    </span>
+                                                    <span id="selected-code" class="country-code ml-1">+225</span>
+                                                    <!-- Selector -->
+                                                    <i class="fa fa-caret-down ml-2" aria-hidden="true"></i>
+                                                    </div>
+                                                </a>
+                                            <!-- </div> -->
+                                            <input type="text" class="input pr-2" placeholder="Numéro de téléphone">
+                                        </div>
+                                        <!-- Contains the flags -->
+                                        <div id="flags-container" class="flags-container" style="display:none;">
+                                            <a class="flag-item" onclick="event.preventDefault();selectCountry();">
+                                                <div class="name-flag">
+                                                    <img src="img/flags/af.png" alt="" class="flag-img">
+                                                    <div class="country-name">Afghanistan</div>
+                                                </div>
+                                                <div class="code-value">+93</div>
+                                            </a>
+                                            <a class="flag-item" onclick="event.preventDefault();selectCountry();">
+                                                <div class="name-flag">
+                                                    <img src="img/flags/bf.png" alt="" class="flag-img">
+                                                    <div class="country-name">Burkina Faso</div>
+                                                </div>
+                                                <div class="code-value">+226</div>
+                                            </a>
+                                            <a class="flag-item" onclick="event.preventDefault();selectCountry();">
+                                                <div class="name-flag">
+                                                    <img src="img/flags/ci.png" alt="" class="flag-img">
+                                                    <div class="country-name">Côte d'Ivoire</div>
+                                                </div>
+                                                <div class="code-value">+225</div>
+                                            </a>
+                                            <a class="flag-item" onclick="event.preventDefault();selectCountry();">
+                                                <div class="name-flag">
+
+                                                    <img src="img/flags/jp.png" alt="" class="flag-img">
+                                                    <div class="country-name">Japan</div>
+                                                </div>
+                                                <div class="code-value">+81</div>
+                                            </a>
+                                        </div>
+                                    </div> <!-- /pt-3 cool-input-half -->
+                                    
+                                </div> <!-- /cool-row -->
+                            </div>
+                            <!-- Addresse paiement inputgroup -->
+                            <div class="inputgroup">
+                                <div class="input-title py-3">Adresse de paiement</div>
+                                <!-- Company, Street, Street 2, -->
+                                <div class="cool-row">
+                                    <div class="pt-3 cool-input-full">
+                                        <div class="cool-input">
+                                            <span class="prepend">
+                                                <i class="fa fa-building" aria-hidden="true"></i>
+                                            </span>
+                                            <input type="text" class="input" placeholder="Nom de l'entreprise (optionel)">
+                                        </div>
+                                    </div> <!-- /pt-3 cool-input-half -->
+                                </div>
+                                <div class="cool-row">
+                                    <div class="pt-3 cool-input-full">
+                                        <div class="cool-input">
+                                            <span class="prepend">
+                                                <i class="fa fa-building-o" aria-hidden="true"></i>
+                                            </span>
+                                            <input type="text" class="input" placeholder="Adresse">
+                                        </div>
+                                    </div> <!-- /pt-3 cool-input-half -->
+                                </div> <!-- /cool-row -->
+                                <div class="cool-row">
+                                    <div class="pt-3 cool-input-full">
+                                        <div class="cool-input">
+                                            <span class="prepend">
+                                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                            </span>
+                                            <input type="text" class="input" placeholder="Adresse 2">
+                                        </div>
+                                    </div> <!-- /pt-3 cool-input-half -->
+                                </div> <!-- /cool-row -->
+                                <!-- Ville, Etat, Code Postal -->
+                                <div class="cool-row">
+                                    <div class="pt-3 cool-input-third">
+                                        <div class="cool-input">
+                                            <span class="prepend">
+                                                <i class="fa fa-map" aria-hidden="true"></i>
+                                            </span>
+                                            <input type="email" class="input" placeholder="Ville">
+                                        </div>
+                                    </div> <!-- /pt-3 cool-input-third -->
+                                    <div class="pt-3 cool-input-third">
+                                        <div class="cool-input">
+                                            <span class="prepend">
+                                                <i class="fa fa-building-o" aria-hidden="true"></i>
+                                            </span>
+                                            <input type="text" class="input" placeholder="Quartier">
+                                        </div>
+                                    </div> <!-- /pt-3 cool-input-third -->
+                                    <div class="pt-3 cool-input-third">
+                                        <div class="cool-input">
+                                            <span class="prepend">
+                                                <i class="fa fa-certificate" aria-hidden="true"></i>
+                                            </span>
+                                            <input type="text" class="input" placeholder="Code Postal">
+                                        </div>
+                                    </div> <!-- /pt-3 cool-input-third -->
+                                </div> <!-- /cool-row -->
+                                <!-- Country -->
+                                <div class="cool-row">
+                                    <div class="pt-3 cool-input-full">
+                                        <div class="cool-input">
+                                            <span class="prepend">
+                                                <i class="fa fa-globe" aria-hidden="true"></i>
+                                            </span>
+                                            <input type="text" class="input" placeholder="Cote d'ivoire">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Additional info inputgroup -->
+                            <div class="inputgroup">
+                                <div class="input-title py-3">Informations Supplémentaires</div>
+                                <!-- First name last name -->
+                                <div class="cool-row">
+                                    <div class="pt-3 cool-input-full">
+                                        <div class="cool-input">
+                                            <span class="prepend">
+                                                <i class="fa fa-money" aria-hidden="true"></i>
+                                            </span>
+                                            <input type="text" class="input" placeholder="Devise">
+                                        </div>
+                                    </div> <!-- /pt-3 cool-input-full -->
+                                </div> <!-- /cool-row -->
+                            </div>
+                            <!-- Account secu inputgroup -->
+                            <div class="inputgroup">
+                                <div class="input-title py-3">Sécurité du compte</div>
+                                <!-- First name last name -->
+                                <div class="cool-row">
+                                    <div class="pt-3 cool-input-half">
+                                        <div class="cool-input">
+                                            <span class="prepend">
+                                                <i class="fa fa-lock" aria-hidden="true"></i>
+                                            </span>
+                                            <input type="password" class="input" placeholder="Mot de passe">
+                                        </div>
+                                    </div> <!-- /pt-3 cool-input-half -->
+                                    <div class="pt-3 cool-input-half">
+                                        <div class="cool-input">
+                                            <span class="prepend">
+                                                <i class="fa fa-lock" aria-hidden="true"></i>
+                                            </span>
+                                            <input type="password" class="input" placeholder="Confirmez le mot de passe">
+                                        </div>
+                                    </div> <!-- /pt-3 cool-input-half -->
+                                </div> <!-- /cool-row -->
+                            </div>
+                            <!-- Passowrd Generator Section -->
+                            <div id="password-generator"></div>
+                            <!-- Mailing list section -->
+                            <div id="mailing-list" class="my-3 p-3 text-center">
+                                <div class="headline h5 mb-2">Rejoignez notre mail</div>
+                                <div>
+                                    We would like to send you occasional news, information and special offers by email.
+                                    To join our mailing list, simply tick the box below. You can unsubscribe at any
+                                    time.
+                                </div>
+                                <div>
+                                    <a href="" class="btn btn-accent">Yes</a>
+                                </div>
+                            </div>
+                            <!-- Termes de service -->
+                            <div id="terms">
+                                <div>
+                                    <i class="fas fa-sign"></i>
+                                    Termes de service
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="" id=" ">
+                                    J'ai lu et je comprends les <a href="">termes de service</a>
+                                </div>
+                            </div>
+                            <!-- Submit -->
+                            <div class="text-center">
+                                <input type="submit" class="btn btn-primary my-3" value="S'inscrire">
+                            </div>
+                        </form>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    <script>
+        // displayAn
+        //alert("l");
+        function displayFlagsCountainer(){
+            var f = document.getElementById("flags-container");
+            f.style.display = "block";
+        }
+        //
+        function selectCountry(){
+            var f = document.getElementById("flags-container");
+            f.style.display = "none";
+            document.getElementById("selected-flag").attributes("src") = "img/flags/jp.png";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Mobile Css -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/adjemin.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <title>AdjeminPay - Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="">
+    <div id="fixed-area" class="bg-gradient text-white text-center">
+        <div class="container px-4">
+            <div class="brand">
+                <img src="img/adjemin-logo-w.png" alt="" class="img-fluid">
+            </div>
+            <div class="text">
+                <h5>Regain control</h5>
+                <h2 class="title">
+                    Agrégateur simple et fiable de <span class="accent">
+                        paiements digitaux
+                    </span>
+                </h2>
+            </div>
+        </div>
+    </div> <!-- /fixed area -->
+    <div id="flex-area" class="">
+        <div class="top-bar d-flex justify-content-between justify-content-lg-end align-items-center ml-auto pt-4">
+            <a href="/" class="d-lg-none ml-md-3 ml-2">
+                <img src="img/index/brand.png" alt="" width="150px">
+            </a>
+            <span>
+                <span class="font-weight-light d-none d-sm-inline">
+                    Vous n'avez pas de compte ?
+                </span>
+                <a href="register.html" class="btn btn-primary mx-md-3 mr-2">
+                    Inscrivez-vous
+                </a>
+            </span>
+        </div>
+        <div id="form-area" class=" ">
+            <div id="formarea-container" class="container-fluid">
+                <div class="container-fluid mt-5" id="form-container">
+                    <div class="header h4 mb-4">
+                        Connection
+                    </div>
+                    <form action="">
+                        <!-- Perso info inputgroup -->
+                        <div class="inputgroup">
+                            <!-- <div class="input-title py-3">Informations Personnelles</div> -->
+                            <!-- First name last name -->
+                            <div class="cool-row ">
+                                <div class="pt-3 cool-input-full">
+                                    <div class="cool-input">
+                                        <span class="prepend">
+                                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                                        </span>
+                                        <input type="text" class="input" placeholder="Adresse email">
+                                    </div>
+                                </div> <!-- /pt-3 cool-input-full -->
+                            </div>
+                            <div class="cool-row">        
+                                <div class="pt-3 cool-input-full">
+                                    <div class="cool-input">
+                                        <span class="prepend">
+                                            <i class="fa fa-lock" aria-hidden="true"></i>
+                                        </span>
+                                        <input type="text" class="input" placeholder="Mot de passe">
+                                    </div>
+                                </div> <!-- /pt-3 cool-input-full -->
+                            </div> <!-- /cool-row -->
+                            <div class="mt-3 text-center">
+                                <div class="cool-input-full">
+                                    <div>
+                                        <input type="checkbox" name="" id=" ">
+                                        Se rappeler de moi
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Submit -->
+                            <div class="text-center">
+                                <input type="submit" class="btn btn-primary my-3" value="S'inscrire">
+                                <a href="" class="btn text-primary btn-link">
+                                    Mot de passe oublié ?
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        // displayAn
+        //alert("l");
+        function displayFlagsCountainer() {
+            var f = document.getElementById("flags-container");
+            f.style.display = "block";
+        }
+        //
+        function selectCountry() {
+            var f = document.getElementById("flags-container");
+            f.style.display = "none";
+            document.getElementById("selected-flag").attributes("src") = "img/flags/jp.png";
+        }
+    </script>
+</body>
+
+</html>

@@ -312,8 +312,15 @@ img.gluid{
     #showcase-container {
         height: 80%;
     }
+    /* Register */
+    #fixed-area{
 
+    }
 }
+
+/* .bg-gradient{
+    background: linear-gradient(0deg, var(--gradient-start), var(--gradient-end));
+} */
 
 .bg-img{
     background-image:
